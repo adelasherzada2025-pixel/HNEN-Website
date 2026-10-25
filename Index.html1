@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hujjat Khurasan Education Network|HKEN</title>
+    <style>
+        /* General Styling*/
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color:#333;
+            margin-bottom: 30px;
+            padding: 20px;
+            padding-left: 15px;
+            line-height:1.6;
+        }
+        .container{
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        /*welcome section*/
+        .welcome-box{
+            background:#fff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        button{
+            background-color:#ff9800;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover{
+            background-color:#e65100;
+            transform: scale(1.05);
+        }
+        #alertMessage{
+            margin-top: 15px;
+            font-weight: bold;
+            color: #1e3c72;
+            background-color:#e3f2fd;
+            padding:12px;
+            border-radius:8px;
+            display:inline-block;
+        }
+        .hidden{
+        display:none!important;
+        }
+        /*Table Design*/
+        .service h2{
+            color:#1e3c72;
+            margin-bottom:15px;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:#fff;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 4px 6px rgba(0,0,0,0.05);
+        }
+        th,td{
+            padding: 15px;
+            text-align: left;
+        }
+        th{
+            background-color:#1e3c72;
+            color:white;
+        }
+        tr:nth-child(even){
+            background-color:#f8f9fa;
+        }
+        tr:hover{
+            background-color:#f1f3f9;
+        }
+        /*Footer Styling*/
+        footer{
+            text-align:center;
+            padding:20px;
+            color:#777;
+            font-size:14px;
+            margin-top:40px;
+        }
+
+       </style>
+    </head>
+<body>
+    <header>
+        <h1>Hujjat Khurasan Education Network (HKEN)</h1>
+        <p>Leading the way in Shooling, English language Exellence, and higher Institutes.</p>
+    </header>
+    <main class="container">
+        <section class="welcom-box">
+            <h2>Welcome to H.K.E.N</h2> 
+            <p>Your bright futuer begins here.Click the button below to receive your daily inspirational message:</p>
+            <button id="welcomeBtn">Click here✨</button>
+            <p id="alertMessage" class="hidden"></p>
+        </section>
+        <section class="services">
+            <h2>Our educational Programs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program Type</th>
+                        <th>Curriculum & Subjects</th>
+                        <th>Target Audience</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <td><strong>Schooling</strong></td>
+                        <td>Standard Ministry of Education Curriculum with contemporory methodologies.</td>
+                        <td>Primary, Secoundary, and High School students.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>English Language</strong></td>
+                        <td>From Beginner levels up to Advanced TOFFl and TELTS preparation.</td>
+                        <td>Language enthusiasts and academic professional.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Institute</strong></td>
+                        <td>Specialized courses in Computer Scinece,Technological Science.</td>
+                        <td>University students and job seekers.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+        <P>&copy; 2026 Hujjat Khurasan Educational Network (HKEN). All Rights Reverved.</P>
+
+    </footer>
+    <script>
+    //Selecting elements
+    const welcomeBtn= document.getElementById('welcomeBtn');
+    const alertMessage=document.getElementById('alertMessage');
+    //Click Event Listener
+    welcomeBtn.addEventListener('click',() =>{
+        //Show dynamic English Message
+        alertMessage.textContent = "Welcome to Hujjat Khurasan Educational Network! We are dedicated to empowering your future through Schooling, English Proficiency, and Technology.🚀";
+        alertMessage.classList.remove('hidden');
+        
+        //Aesthetic update for button 
+        welcomeBtn.style.backgroundColor  = '#4CAF50';
+        welcomeBtn.textContent = 'Welcome!✔'; 
+    });
+    </script>
+</body>
+</html>
+
+
+
+
